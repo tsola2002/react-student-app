@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<StudentList />} />
         <Route path="/add" element={<StudentForm />} />
+        <Route path="/edit/:id" element={<StudentForm />} />
       </Routes>
     </BrowserRouter>
   );

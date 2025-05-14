@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Form, Input, DatePicker, Button, message } from 'antd';
 import { useNavigate, useParams } from 'react-router-dom';
 import dayjs from 'dayjs';
-import { createStudent, updateStudent } from '../api/studentApi';
+import { createStudent, getStudent, updateStudent } from '../api/studentApi';
 
 function StudentForm() {
   const [form] = Form.useForm();
