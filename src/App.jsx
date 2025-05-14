@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import StudentList from './pages/StudentList';
-//import StudentForm from './pages/StudentForm';
+import StudentForm from './pages/StudentForm';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<StudentList />} />
+        <Route path="/add" element={<StudentForm />} />
       </Routes>
     </BrowserRouter>
   );
